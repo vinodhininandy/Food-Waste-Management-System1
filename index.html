@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donate</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('img/pexels-photo-1640773.jpeg'); /* Add your background image URL here */
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        text-align: center;
+
+    }
+    
+    .logo {
+        font-size: 48px;
+    color: #000000;
+    margin-bottom: 20px;
+    background: rgb(255 228 228 / 45%);
+    }
+    
+    .para {
+        font-size: 28px;
+        font-weight: 600;
+        color: #000000c9;
+        margin-bottom: 30px;
+        
+        
+
+     
+    }
+    
+    .log {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    
+    }
+    
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        backdrop-filter: blur(15px);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 15px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #000000;
+        border-radius: 30px;
+        transition: background 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    a:not(:hover) {
+            backdrop-filter: blur(15px);
+    }
+    
+    a:hover {
+        background: #2a7ed8de;
+        transform: scale(1.1);
+    }
+
+    i {
+        margin-right: 10px;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .logo {
+            font-size: 36px;
+        }
+        .para {
+            font-size: 24px;
+        }
+        a {
+            font-size: 16px;
+            padding: 12px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <p class="logo">Welcome to Food Donate</p>
+        <p class="para">Login as</p>
+        <div class="log">
+            <a href="signup.php"><i class="fas fa-user"></i> User</a>
+            <a href="admin/signup.php"><i class="fas fa-user-tie"></i> Admin</a>
+            <a href="ngo/signup.php"><i class="fas fa-hands-helping"></i> NGO</a>
+            <a href="delivery/deliverysignup.php" id="delivery"><i class="fas fa-truck"></i> Delivery</a>
+        </div>
+    </div>
+</body>
+</html>
